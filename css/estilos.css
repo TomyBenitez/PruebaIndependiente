@@ -1,0 +1,192 @@
+/*Todo*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Cuerpo */
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Contenido*/
+#container{
+    border:rgb(0, 0, 0) solid 1px
+}
+
+/*Encabezado*/
+header{
+    background-color: rgb(166, 36, 252);
+    text-align: center;
+    border-bottom: rgb(0, 0, 0) 1px;
+}
+
+/*Botón de Inicio*/
+button.inicio{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 48px;
+    outline: none;
+    border: 1px solid rgb(37, 0, 250);
+    background-color: #fff;
+    border-radius: 6px;
+    color: rgb(37, 0, 250);
+    cursor: pointer;
+    margin:5px auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+button.inicio::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,
+    rgb(#fafafa), rgb(37, 0, 250));
+    transition: all .25s;
+    z-index: -1;
+}
+
+button.inicio:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 15, 218);
+}
+
+button.inicio:hover::before{
+    height: 100%;
+}
+
+a.x{text-decoration: none;}
+
+/*Menú*/
+nav{
+    background-color: rgb(184, 184, 184);
+    height: 68px;
+    border: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 150px;
+    padding: 1px;
+}
+
+/* esto mantiene lo demás abajo*/
+.clearfix{
+    clear: both;
+}
+
+/* Artículo*/
+.article{
+    color: black;
+}
+
+/* contenido */
+#content{
+    float: left;
+    width: calc(80% - 20px);
+    background: lightgray;
+    min-height: 500px;
+    padding: 10px;
+}
+
+/*formulario*/
+form.rellenar{
+    width: 20%;
+    border: solid 1px;
+}
+
+label{
+    text-align: justify;
+}
+
+/*Tabla*/
+td{
+    text-align: justify;
+}
+
+button{
+    border: 0px;
+    background-color: transparent;
+}
+
+/* Barra Lateral*/
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    background-color:rgb(184, 183, 183);
+    border:1px solid black;
+    border-top: 0px;
+    padding: 9px;
+    min-height: 998px;
+    
+}
+
+/* Pie de Página */
+footer{
+    background-color: rgb(136, 15, 218);
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*Scroll o barra lateral*/
+body::-webkit-scrollbar{
+    width: 0.7em;
+}
+
+body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    -webkit-box-shadow-:inset 0 0 6px rgb(161, 59, 230);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(161, 59, 230);
+    outline: 1px solid #000;
+    border-radius: 10px;
+}
+
+/*Botón de Volver*/
+
+.regresar{
+    text-decoration: none;
+    display: block;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(37, 0, 250);
+    background-color: #fff;
+    border-radius: 6px;
+    color: rgb(37, 0, 250);
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    transition: all .25s;
+    text-transform: uppercase;
+}
+
+button.regresar:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 15, 218);
+}
+
+/*Contacto div de texto e imagen*/
+div.contacto{
+    text-align: center;
+}
