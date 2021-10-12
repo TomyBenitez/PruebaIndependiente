@@ -6,33 +6,64 @@
 
 /* Cuerpo */
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(184, 183, 183);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Contenido*/
+section.content{
+    width: 70%;
+    box-sizing: border-box;
+}
+
+/*para moviles y pc*/
 #container{
-    border:rgb(0, 0, 0) solid 1px
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow:hidden;
+    box-sizing: border-box;
 }
 
 /*Encabezado*/
 header{
-    background-color: rgb(166, 36, 252);
+    background-color: #22a2c4;
     text-align: center;
     border-bottom: rgb(0, 0, 0) 1px;
 }
 
-/*Botón de Inicio*/
+/*Menú*/
+nav{
+    background-color: rgb(184, 184, 184);
+    height: 68px;
+    border: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 5%;
+    padding: 1px;
+}
+
+li{
+    margin: -20px -50px;
+    position:relative;
+    top:50%;
+    left:20%;
+}
+
 button.inicio{
     text-decoration: none;
     display: block;
     width: 150px;
     height: 48px;
     outline: none;
-    border: 1px solid rgb(37, 0, 250);
+    border: 1px solid #22a2c4;
     background-color: #fff;
     border-radius: 6px;
-    color: rgb(37, 0, 250);
+    color: #22a2c4;
     cursor: pointer;
     margin:5px auto;
     transition: all .25s;
@@ -48,7 +79,7 @@ button.inicio::before{
     left: 0;
     bottom: 0;
     background-image: linear-gradient(to right,
-    rgb(#fafafa), rgb(37, 0, 250));
+    rgb(#fafafa), #22a2c4);
     transition: all .25s;
     z-index: -1;
 }
@@ -56,7 +87,7 @@ button.inicio::before{
 button.inicio:hover{
     border: 1px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    background-color: rgb(136, 15, 218);
+    background-color: #22a2c4;
 }
 
 button.inicio:hover::before{
@@ -64,23 +95,6 @@ button.inicio:hover::before{
 }
 
 a.x{text-decoration: none;}
-
-/*Menú*/
-nav{
-    background-color: rgb(184, 184, 184);
-    height: 68px;
-    border: 1px solid black;
-}
-
-nav ul li{
-    float: left;
-    list-style: none;
-    margin: 10px;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: 150px;
-    padding: 1px;
-}
 
 /* esto mantiene lo demás abajo*/
 .clearfix{
@@ -95,10 +109,11 @@ nav ul li{
 /* contenido */
 #content{
     float: left;
-    width: calc(80% - 20px);
+    width: 80%;
     background: lightgray;
     min-height: 500px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 /*formulario*/
@@ -114,6 +129,8 @@ label{
 /*Tabla*/
 td{
     text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 button{
@@ -124,23 +141,24 @@ button{
 /* Barra Lateral*/
 aside{
     float: left;
-    width: calc(20% - 20px);
+    width: 20%;
     background-color:rgb(184, 183, 183);
     border:1px solid black;
     border-top: 0px;
     padding: 9px;
-    min-height: 998px;
-    
+    min-height: 1016px;
+    box-sizing: border-box;
 }
 
 /* Pie de Página */
 footer{
-    background-color: rgb(136, 15, 218);
+    background-color: #22a2c4;
     border: 1px solid black;
     color: black;
     text-align: center;
     height: 50px;
     line-height: 50px;
+    box-sizing: border-box;
 }
 
 /*Scroll o barra lateral*/
@@ -150,43 +168,178 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-track{
     border-radius: 10px;
-    -webkit-box-shadow-:inset 0 0 6px rgb(161, 59, 230);
+    -webkit-box-shadow-:inset 0 0 6px #22a2c4;
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: rgb(161, 59, 230);
+    background-color: #22a2c4;
     outline: 1px solid #000;
     border-radius: 10px;
+    border: solid black 1px;
 }
 
-/*Botón de Volver*/
+/*Botón de Volver y barra superior de % de contenido*/
 
-.regresar{
-    text-decoration: none;
-    display: block;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: 1px solid rgb(37, 0, 250);
-    background-color: #fff;
-    border-radius: 6px;
-    color: rgb(37, 0, 250);
+#ir_arriba_boton{
     position: fixed;
-    z-index: 1;
-    cursor: pointer;
-    bottom: 20px;
-    right: 20px;
-    transition: all .25s;
-    text-transform: uppercase;
+    z-index: 1000;
+    right: 25px;
+    bottom: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 58px;
+    height: 58px;
+    color: #00bfbf;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .2s;
 }
 
-button.regresar:hover{
-    border: 1px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    background-color: rgb(136, 15, 218);
+#ir_arriba_boton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #22a2c4;
+}
+
+.indicador_contenedor{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 7px;
+    z-index: 1001;
+}
+
+.indicador_scroll{
+    height: 100%;
+    width: 0;
+    background-color: #28bce6;
+}
+
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+div.arrow {
+	width: 45%;
+	height: 45%;
+	box-sizing: border-box;
+	position: absolute;
+	transform: rotate(-45deg);
+    margin-top: 40%;
+    margin-left: 20%;
+}
+
+	div.arrow::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .8vmin .8vmin 0 0;
+		border-style: solid;
+		border-color: #22a2c4;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+}
+
+div.arrow:after {
+		content: '';
+		float: left;
+		position: relative;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		border-width: 0 .8vmin 0 0;
+		border-style: solid;
+		border-color: #22a2c4;
+		transform-origin: 100% 0;
+		transition:.2s ease;
+}
+
+div.arrow:hover::after {
+		transform: rotate(45deg);
+		border-color: #ffffff;
+		height: 120%;
+}
+
+div.arrow:hover::before {
+		border-color: #ffffff;
+		transform: scale(.8);
 }
 
 /*Contacto div de texto e imagen*/
 div.contacto{
     text-align: center;
+}
+
+/*Pagina Adaptable*/
+@media screen and (max-width: 800px){
+    .content{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .content{
+        width: 100%;
+    }
+    .aside{
+        display: none;
+    }
+}
+
+
+/*Botón de Modo Oscuro (switch)*/
+
+button.switch{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    margin: 15px auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    outline: none;
+}
+
+button.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0%;
+    left: 0%;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    border-bottom: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+button.switch.active{
+    background: orange;
+    color: #000;
+}
+
+button.switch.active::after{
+    right: 0%;
+    left: unset;
+}
+
+span.switch{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
 }
