@@ -1,3 +1,5 @@
+//Botón subir y barra de Progreso
+
 addEventListener('DOMContentLoaded', () => {
     const boton_ir_arriba = document.querySelector('#ir_arriba_boton')
     const barra_indicador = document.querySelector(".indicador_scroll")
@@ -24,11 +26,29 @@ addEventListener('DOMContentLoaded', () => {
 
     boton_ir_arriba.addEventListener('click', irArriba)
     window.addEventListener('scroll', indicar_scroll)
-})
+});
+
+//Botón de switch modo oscuro.
 
 const btnSwitch = document.querySelector('#switch');
 
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
+    
+    //Guardamos el modo en local Storage.
+    if(document.body.classList.contains('dark')){
+        localStorage.setItem('dark-mode', 'true');
+    }else{
+        localStorage.setItem('dark-mode', 'false');
+    }
 });
+
+//Obtenemos el modo actual.
+if(localStorage.getItem('dark-mode') === 'true' ){
+    document.body.classList.add('dark');
+    btnSwitch.classList.add('active');
+}else{
+    document.body.classList.remove('dark');
+    btnSwitch.classList.remove('active');
+}
