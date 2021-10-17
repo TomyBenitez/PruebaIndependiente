@@ -14,6 +14,7 @@ body.dark #content{
     transition: .3s all;
 }
 
+/*modo oscuro de la nav*/
 body.dark nav{
     background-color: #202020;
     border-bottom: none;
@@ -25,6 +26,7 @@ body.dark section{
     transition: .3s all;
 }
 
+/*articulos fondo*/
 body.dark section article{
     background-color: #181818;
     transition: .3s all;
@@ -35,6 +37,7 @@ body.dark article{
     transition: .3s all;
 }
 
+/*el aside o barra lateral*/
 body.dark aside{
     background-color: #181818;
     border: none;
@@ -46,6 +49,7 @@ body.dark h3.aside{
     transition: .3s all;
 }
 
+/*la tabla*/
 body.dark table{
     background-color: #181818;
     transition: .3s all;
@@ -66,6 +70,9 @@ body.dark th{
     transition: .3s all;
 }
 
+
+/*botón de subir*/
+
 body.dark #ir_arriba_boton{
     background-color: #313131;
 }
@@ -76,9 +83,73 @@ body.dark #ir_arriba_boton:hover{
 
 body.dark button.inicio{
     background-color: #313131;
+    box-shadow: #181818 5px 5px;
 }
 
 body.dark button.inicio:hover{
     color: rgb(255, 255, 255);
     background-color: #22a2c4;
+}
+
+
+/*botón de login y register*/
+body.dark button.login{
+    box-shadow: #181818 5px 5px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    height: 28px;
+    outline: none;
+    border: 1px solid #22a2c4;
+    background-color: #313131;
+    border-radius: 6px;
+    color: #22a2c4;
+    cursor: pointer;
+    margin:15px auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+body.dark button.login::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,
+    rgb(#313131), #22a2c4);
+    transition: all .25s;
+    z-index: -1;
+}
+
+body.dark button.login:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+    background-color: #22a2c4;
+}
+
+button.login:hover::before{
+    height: 100%;
+}
+
+body.dark div.login-box a:hover{
+    transition: .3s all;
+    color: gray;
+}
+
+body.dark div.login-box{
+    box-shadow: #313131 31px 31px;
+    transition: .3s all;
+}
+
+body.dark div.register-box{
+    box-shadow: #313131 31px 31px;
+    transition: .3s all;
+}
+
+body.dark div.register-box a:hover{
+    transition: .3s all;
+    color: gray;
 }

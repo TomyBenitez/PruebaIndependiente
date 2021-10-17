@@ -6,7 +6,7 @@
 
 /* Cuerpo */
 body{
-    background-color: rgb(184, 183, 183);
+    background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -55,6 +55,7 @@ li{
 }
 
 button.inicio{
+    box-shadow: darkgray 5px 5px;
     text-decoration: none;
     display: block;
     width: 150px;
@@ -96,6 +97,48 @@ button.inicio:hover::before{
 
 a.x{text-decoration: none;}
 
+/*botón de login y register*/
+button.login{
+    box-shadow: darkgray 5px 5px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    height: 28px;
+    outline: none;
+    border: 1px solid #22a2c4;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #22a2c4;
+    cursor: pointer;
+    margin:15px auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+button.login::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,
+    rgb(#fafafa), #22a2c4);
+    transition: all .25s;
+    z-index: -1;
+}
+
+button.login:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #22a2c4;
+}
+
+button.login:hover::before{
+    height: 100%;
+}
+
 /* esto mantiene lo demás abajo*/
 .clearfix{
     clear: both;
@@ -112,7 +155,6 @@ a.x{text-decoration: none;}
     width: 80%;
     background: lightgray;
     min-height: 500px;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -342,4 +384,178 @@ span.switch{
     display: block;
     background: none;
     color: #fff;
+}
+
+/*Formulario de Login*/
+
+div.login-box{
+    width: 320px;
+    height: 420px;
+    border-radius: 15px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: darkgray 31px 31px;
+}
+
+div.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+div.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+div.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+div.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.login-box input.prueba{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+div.login-box input[type="submit"]{
+    border: 1px;
+    border-color: #22a2c4;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    background: white;
+    color: #22a2c4;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+div.login-box input[type="submit"]:hover{
+    box-sizing: border-box;
+    transform: scale(1.1);
+    color: white;
+    background: #22a2c4;
+    transition: 0.3s;
+}
+
+div.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    transition: .3s all;
+}
+
+div.login-box a:hover{
+    color: white;
+}
+
+/*Formulario de Register*/
+div.register-box{
+    width: 320px;
+    height: 620px;
+    border-radius: 15px;
+    background: #000;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: darkgray 31px 31px;
+}
+div.register-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+div.register-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+div.register-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+div.register-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.register-box input.prueba{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+div.register-box input[type="submit"]{
+    border: 1px;
+    border-color: #22a2c4;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    background: white;
+    color: #22a2c4;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+div.register-box input[type="submit"]:hover{
+    box-sizing: border-box;
+    transform: scale(1.1);
+    color: white;
+    background: #22a2c4;
+    transition: 0.3s;
+}
+
+div.register-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    transition: .3s all;
+}
+
+div.register-box a:hover{
+    color: white;
 }
