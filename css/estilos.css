@@ -19,7 +19,7 @@ section.content{
 #container{
     width: 100%;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0px auto;
     overflow:hidden;
     box-sizing: border-box;
 }
@@ -153,6 +153,7 @@ button.login:hover::before{
 #content{
     float: left;
     width: 80%;
+    padding: 10px;
     background: lightgray;
     min-height: 500px;
     box-sizing: border-box;
