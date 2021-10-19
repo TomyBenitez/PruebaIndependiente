@@ -1,0 +1,62 @@
+@media screen and (max-width: 800px){
+    /*PRINCIPAL*/
+    #content{
+        width: 100%;
+    }
+    aside{opacity: 0; visibility: hidden;}
+    
+    nav{height: 200px;}
+
+    li{
+        margin: 10%;
+        left: 10%;
+        position:relative;}
+
+    button.inicio{
+        width: 100px;
+        height: 38px;
+        margin-top: 5%
+    }
+
+    button.login{
+        width: 70px;
+        left: 39%;
+        margin-top: 5%;
+        position: relative;
+    }
+
+    body.dark button.login{
+        width: 70px;
+        left: 39%;
+        margin-top: 5%;
+        position: relative;
+    }
+
+    button.switch{
+        margin-top: 5%;
+        left: 1%;
+        width: 58px;
+        height: 28px;
+        position: relative;
+    }
+
+    /*LOGIN*/
+    div.login-box{box-shadow: darkgray 11px 11px;}
+
+    div.login-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+    
+    div.login-box a:hover{
+        color: white;
+    }
+    
+    /*Formulario de Register*/
+    div.register-box{box-shadow: darkgray 11px 11px;}
+
+    div.register-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+}

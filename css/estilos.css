@@ -15,15 +15,6 @@ section.content{
     box-sizing: border-box;
 }
 
-/*para moviles y pc*/
-#container{
-    width: 100%;
-    max-width: 1600px;
-    margin: 0px auto;
-    overflow:hidden;
-    box-sizing: border-box;
-}
-
 /*Encabezado*/
 header{
     background-color: #22a2c4;
@@ -189,7 +180,7 @@ aside{
     border:1px solid black;
     border-top: 0px;
     padding: 9px;
-    min-height: 1016px;
+    min-height: 1082px;
     box-sizing: border-box;
 }
 
@@ -318,26 +309,6 @@ div.arrow:hover::before {
 div.contacto{
     text-align: center;
 }
-
-/*Pagina Adaptable*/
-@media screen and (max-width: 800px){
-    .content{
-        width: 100%;
-    }
-    .aside{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .content{
-        width: 100%;
-    }
-    .aside{
-        display: none;
-    }
-}
-
 
 /*Botón de Modo Oscuro (switch)*/
 
