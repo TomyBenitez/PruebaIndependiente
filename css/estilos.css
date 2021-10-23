@@ -274,7 +274,7 @@ div.arrow {
     margin-left: 20%;
 }
 
-	div.arrow::before {
+div.arrow::before {
 		content: '';
 		width: 100%;
 		height: 100%;
@@ -300,15 +300,15 @@ div.arrow:after {
 		transition:.2s ease;
 }
 
-div.arrow:hover::after {
-		transform: rotate(45deg);
-		border-color: #ffffff;
-		height: 120%;
+#ir_arriba_boton:hover .arrow::after{
+    transform: rotate(45deg);
+    border-color: #ffffff;
+    height: 120%;
 }
 
-div.arrow:hover::before {
-		border-color: #ffffff;
-		transform: scale(.8);
+#ir_arriba_boton:hover div.arrow::before {
+    border-color: #ffffff;
+    transform: scale(.8);
 }
 
 /*Contacto div de texto e imagen*/
