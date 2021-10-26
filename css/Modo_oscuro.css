@@ -153,3 +153,26 @@ body.dark div.register-box a:hover{
     transition: .3s all;
     color: gray;
 }
+
+/*Página Contacto*/
+
+body.dark div.foto-contenedor{
+    box-shadow: #313131 -5px 5px 3px;
+    transition: .3s all;
+}
+
+body.dark div.informacion{
+    box-shadow: #313131 -5px 5px 3px;
+    transition: .3s all;
+}
+
+body.dark div.informacion h2{
+    color: black;
+    margin-bottom: 5px;
+    transition: .3s all;
+}
+
+body.dark div.texto-contacto-info{
+    background: #202020;
+    transition: .3s all;
+}
