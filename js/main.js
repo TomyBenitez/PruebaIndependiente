@@ -17,7 +17,7 @@ addEventListener('DOMContentLoaded', () => {
         if(obtener_pixeles_inicio() > 50){
             boton_ir_arriba.className = 'mostrar'
         }else{
-            boton_ir_arriba.classname = 'ocultar'
+            boton_ir_arriba.className = 'ocultar'
         }
         let alto = document.documentElement.scrollHeight - document.documentElement.clientHeight
         let avance_scroll = (obtener_pixeles_inicio() / alto) * 100
