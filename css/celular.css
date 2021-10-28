@@ -3,8 +3,15 @@
     #content{
         width: 100%;
     }
+
+    body.dark #content{
+        width: 100%;
+    }
+
     aside{opacity: 0; visibility: hidden;}
     
+    body.dark aside{opacity: 0; visibility: hidden;}
+
     nav{height: 200px;}
 
     li{
