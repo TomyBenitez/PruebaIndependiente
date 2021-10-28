@@ -2,6 +2,7 @@
 body.dark{
     background: #181818;
     transition: .3s all;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body.dark #content{
@@ -21,8 +22,9 @@ body.dark nav{
     transition: .3s all;
 }
 
-body.dark section{
+body.dark section.content{
     background-color: #181818;
+    width: 80%;
     transition: .3s all;
 }
 
@@ -175,4 +177,17 @@ body.dark div.informacion h2{
 body.dark div.texto-contacto-info{
     background: #202020;
     transition: .3s all;
+}
+/*tarjeta de contacto*/
+
+body.dark .card-body{
+    background-color: #202020;
+}
+
+body.dark .col-md-8{
+    background: #202020;
+}
+
+body.dark .card{
+    border: none;
 }

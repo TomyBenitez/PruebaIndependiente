@@ -6,12 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ScienceBook</title>
-    <link rel="shortcut icon" href="imgs/Logo SB.png" type="image/png">
+    <link rel="shortcut icon" href="imgs/LogoSB.png" type="image/png">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/Modo_oscuro.css">
     <link rel="stylesheet" href="css/celular.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <meta body.dark name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <div id="conteiner">
     
@@ -55,17 +57,21 @@
 
         <article>
     <div class="contacto">
-        <div class="foto">
-            <div class="foto-contenedor">
-                <img src="imgs/foto tomy.png" width="300">
+        <div class="card" style="max-width: 740px; left:50%; transform: translate(-50%); margin-bottom: 10px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="imgs/fototomy.png" class="img-fluid rounded-start" alt="Tomás Benitez">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Hola! Soy Tomás Benitez Programador Junior.</h5>
+                    <p class="card-text">Puedes contactarme <span class="typed"></span></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="informacion">
-            <h2>Hola! Soy Tomás Benitez Programador Junior.</h2>
-            <div class="texto-contacto-info">
-                <h4>Puedes contactarme <span class="typed"></span></h4>
             </div>
-        </div>
+    </div>
         <div class="clearfix"></div>
         <!-- div redes contiene todo-->
         <div class="redes-container">
@@ -104,6 +110,7 @@
     <div class="clearfix"></div>
     <!--Pie de Página-->
     <footer>Derechos Reservados© 2020-2022</footer>
+    <script src="js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/jquery-3.6.0.min.js"></script>  
     <script src="js/main.js"></script>
