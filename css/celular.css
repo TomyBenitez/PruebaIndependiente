@@ -4,14 +4,21 @@
         width: 100%;
     }
 
+    /*Altura de pixeles para carousel o SlideShow*/
+    div.carousel-inner{height: 200px;}
+
+
+    /*Ajuste de contenido en modo oscuro*/
     body.dark #content{
         width: 100%;
     }
-
+    /*Ajuste del Aside*/
     aside{opacity: 0; visibility: hidden;}
     
     body.dark aside{opacity: 0; visibility: hidden;}
 
+
+    /*Ajuste de menú y botones*/
     nav{height: 200px;}
 
     li{
