@@ -605,3 +605,6 @@ div.redes-container ul li a.twitter:hover{
 div.redes-container ul li a.github:hover{
     background-color: #7B68EE;
 }
+
+
+div.carousel-inner{height: 500px;}
