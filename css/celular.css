@@ -21,37 +21,30 @@
     /*Ajuste de menú y botones*/
     nav{height: 200px;}
 
-    li{
-        margin: 10%;
-        left: 10%;
-        position:relative;}
+    li{position:relative;}
 
     button.inicio{
         width: 100px;
         height: 38px;
-        margin-top: 5%
     }
 
     button.login{
         width: 70px;
         left: 39%;
-        margin-top: 5%;
         position: relative;
     }
 
     body.dark button.login{
         width: 70px;
         left: 39%;
-        margin-top: 5%;
         position: relative;
     }
 
     button.switch{
-        margin-top: 5%;
-        left: 1%;
         width: 58px;
         height: 28px;
         position: relative;
+        margin: 15px auto;
     }
 
     /*LOGIN*/

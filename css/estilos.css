@@ -32,17 +32,13 @@ nav{
 nav ul li{
     float: left;
     list-style: none;
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding: 1px;
 }
 
 li{
-    margin: -20px -50px;
     position:relative;
-    top:50%;
-    left:20%;
 }
 
 button.inicio{
@@ -59,7 +55,6 @@ button.inicio{
     border-radius: 6px;
     color: #22a2c4;
     cursor: pointer;
-    margin:5px auto;
     transition: all .25s;
     z-index: 1;
     position: relative;
@@ -90,8 +85,6 @@ button.inicio:hover{
 button.inicio:hover::before{
     height: 100%;
 }
-
-a.x{text-decoration: none;}
 
 /*botón de login y register*/
 button.login{
@@ -327,10 +320,10 @@ button.switch{
     border-radius: 1000px;
     border: none;
     margin: 15px auto;
+    float: left;
     position: relative;
     cursor: pointer;
     display: flex;
-    float: right;
     outline: none;
 }
 
@@ -604,4 +597,15 @@ div.redes-container ul li a.twitter:hover{
 
 div.redes-container ul li a.github:hover{
     background-color: #7B68EE;
+}
+
+div.card{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 8%;
+    right: 10%;
+    margin: 3px;
 }
