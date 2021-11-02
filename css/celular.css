@@ -19,7 +19,9 @@
 
 
     /*Ajuste de menú y botones*/
-    nav{height: 200px;}
+    nav{height: 200px;
+        padding: 5px;
+    }
 
     li{position:relative;}
 

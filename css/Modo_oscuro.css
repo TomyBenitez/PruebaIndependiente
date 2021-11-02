@@ -20,6 +20,7 @@ body.dark nav{
     background-color: #202020;
     border-bottom: none;
     transition: .3s all;
+    padding: 5px;
 }
 
 body.dark section.content{
@@ -107,7 +108,7 @@ body.dark button.login{
     border-radius: 6px;
     color: #22a2c4;
     cursor: pointer;
-    margin:15px auto;
+    margin-top: 10px;
     transition: all .25s;
     z-index: 1;
     position: relative;
