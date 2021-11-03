@@ -6,6 +6,7 @@
 
 /* Cuerpo */
 body{
+    background: lightgray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -153,6 +154,16 @@ button.login:hover::before{
     min-height: 500px;
     box-sizing: border-box;
 }
+
+/*Articulos*/
+article.cartas{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+article{
+    margin-bottom: 10px;
+}
+
 
 /*formulario*/
 form.rellenar{
@@ -615,5 +626,5 @@ div.card{
     position: relative;
     left: 8%;
     right: 10%;
-    margin: 3px;
+    margin: 5px;
 }

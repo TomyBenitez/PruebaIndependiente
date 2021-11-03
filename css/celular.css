@@ -69,3 +69,352 @@
         margin-bottom:6px;
     }
 }
+
+@media screen and (max-width: 600px){
+    /*PRINCIPAL*/
+    #content{
+        width: 100%;
+    }
+
+    /*Altura de pixeles para carousel o SlideShow*/
+    div.carousel-inner{height: 200px;}
+
+
+    /*Ajuste de contenido en modo oscuro*/
+    body.dark #content{
+        width: 100%;
+    }
+    /*Ajuste del Aside*/
+    aside{opacity: 0; visibility: hidden;}
+    
+    body.dark aside{opacity: 0; visibility: hidden;}
+
+
+    /*Ajuste de menú y botones*/
+    nav{height: 150px;
+        padding: 5px;
+    }
+
+    nav ul li{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .nav-link{
+        padding: 0px;
+    }
+
+    li{position:relative;}
+
+    button.inicio{
+        width: 100px;
+        height: 38px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    button.login{
+        width: 70px;
+        left: 39%;
+        position: relative;
+        margin-top: 0px;
+        float: left;
+    }
+
+    body.dark button.login{
+        width: 70px;
+        left: 39%;
+        position: relative;
+        margin-top: 0px;
+        float: left;
+    }
+
+    button.switch{
+        width: 58px;
+        height: 28px;
+        position: relative;
+        margin: 15px auto;
+        float: left;
+    }
+
+    /*LOGIN*/
+    div.login-box{box-shadow: darkgray 11px 11px;}
+
+    div.login-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+    
+    div.login-box a:hover{
+        color: white;
+    }
+    
+    /*Formulario de Register*/
+    div.register-box{box-shadow: darkgray 11px 11px;}
+
+    div.register-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    /*PRINCIPAL*/
+    #content{
+        width: 100%;
+    }
+
+    /*Altura de pixeles para carousel o SlideShow*/
+    div.carousel-inner{height: 200px;}
+
+
+    /*Ajuste de contenido en modo oscuro*/
+    body.dark #content{
+        width: 100%;
+    }
+    /*Ajuste del Aside*/
+    aside{opacity: 0; visibility: hidden;}
+    
+    body.dark aside{opacity: 0; visibility: hidden;}
+
+
+    /*Ajuste de menú y botones*/
+    nav{height: 250px;}
+
+    nav ul li{padding: 0%;}
+
+    .nav-link{
+        padding: 0px;
+    }
+
+    li{position:relative;
+        left: 5%;
+        right: 0%;
+        float: left;
+    }
+
+    button.inicio{
+        width: 100px;
+        height: 38px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    button.login{
+        width: 70px;
+        left: 39%;
+        margin-top: 0px;
+        position: relative;
+        float: left;
+    }
+
+    body.dark button.login{
+        width: 70px;
+        left: 39%;
+        margin-top: 0px;
+        position: relative;
+        float: left;
+    }
+
+    button.switch{
+        width: 58px;
+        height: 28px;
+        position: relative;
+        margin: 50px auto;
+        float: left;
+    }
+
+    /*LOGIN*/
+    div.login-box{box-shadow: darkgray 11px 11px;}
+
+    div.login-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+    
+    div.login-box a:hover{
+        color: white;
+    }
+    
+    /*Formulario de Register*/
+    div.register-box{box-shadow: darkgray 11px 11px;}
+
+    div.register-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+}
+
+@media screen and (max-width: 327px){
+    /*PRINCIPAL*/
+    #content{
+        width: 100%;
+    }
+
+    /*Altura de pixeles para carousel o SlideShow*/
+    div.carousel-inner{height: 200px;}
+
+
+    /*Ajuste de contenido en modo oscuro*/
+    body.dark #content{
+        width: 100%;
+    }
+    /*Ajuste del Aside*/
+    aside{opacity: 0; visibility: hidden;}
+    
+    body.dark aside{opacity: 0; visibility: hidden;}
+
+
+    /*Ajuste de menú y botones*/
+    nav{height: 200px;}
+
+    .nav-link{
+        padding: 0px;
+    }
+
+    nav ul li{
+        padding: 0;
+    }
+
+    li{position:relative;}
+
+    button.inicio{
+        width: 100px;
+        height: 38px;
+        margin-top: 0px;
+        float: left;
+
+    }
+
+    button.login{
+        width: 70px;
+        left: 39%;
+        margin-top: 0px;
+        position: relative;
+        float: left;
+    }
+
+    body.dark button.login{
+        width: 70px;
+        left: 39%;
+        position: relative;
+    }
+
+    button.switch{
+        width: 58px;
+        height: 28px;
+        position: relative;
+        float: left;
+        margin: 0%;
+        left: 100%;
+        transform: translate(50%);
+    }
+
+    /*LOGIN*/
+    div.login-box{box-shadow: darkgray 11px 11px;}
+
+    div.login-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+    
+    div.login-box a:hover{
+        color: white;
+    }
+    
+    /*Formulario de Register*/
+    div.register-box{box-shadow: darkgray 11px 11px;}
+
+    div.register-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+}
+
+@media screen and (max-width: 307px){
+    /*PRINCIPAL*/
+    #content{
+        width: 100%;
+    }
+
+    /*Altura de pixeles para carousel o SlideShow*/
+    div.carousel-inner{height: 200px;}
+
+
+    /*Ajuste de contenido en modo oscuro*/
+    body.dark #content{
+        width: 100%;
+    }
+    /*Ajuste del Aside*/
+    aside{opacity: 0; visibility: hidden;}
+    
+    body.dark aside{opacity: 0; visibility: hidden;}
+
+
+    /*Ajuste de menú y botones*/
+    nav{height: 350px;
+        padding: 5px;
+    }
+
+    .nav-link{
+        padding: 0px;
+    }
+
+    nav ul li{
+        padding: 0;
+    }
+
+    li{position:relative;
+        left: 40%;
+        transform: translate(-50%);
+    }
+
+    button.inicio{
+        width: 100px;
+        height: 38px;
+        margin-top: 0px;
+    }
+
+    button.login{
+        width: 100px;
+        margin-top: 0px;
+        left: -2%;
+        position: relative;
+    }
+
+    body.dark button.login{
+        width: 70px;
+        left: 40%;
+        transform: translate(-50%);
+        position: relative;
+    }
+
+    button.switch{
+        width: 58px;
+        height: 28px;
+        position: relative;
+        margin: 0%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /*LOGIN*/
+    div.login-box{box-shadow: darkgray 11px 11px;}
+
+    div.login-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+    
+    div.login-box a:hover{
+        color: white;
+    }
+    
+    /*Formulario de Register*/
+    div.register-box{box-shadow: darkgray 11px 11px;}
+
+    div.register-box a{
+        font-size: 15px;
+        margin-bottom:6px;
+    }
+}

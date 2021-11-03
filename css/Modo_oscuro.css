@@ -108,12 +108,12 @@ body.dark button.login{
     border-radius: 6px;
     color: #22a2c4;
     cursor: pointer;
-    margin-top: 10px;
     transition: all .25s;
     z-index: 1;
     position: relative;
     text-transform: uppercase;
 }
+
 body.dark button.login::before{
     content: '';
     position: absolute;
