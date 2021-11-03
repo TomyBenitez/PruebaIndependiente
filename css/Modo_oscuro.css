@@ -143,12 +143,12 @@ body.dark div.login-box a:hover{
 }
 
 body.dark div.login-box{
-    box-shadow: #313131 31px 31px;
+    box-shadow: #313131 15px 15px;
     transition: .3s all;
 }
 
 body.dark div.register-box{
-    box-shadow: #313131 31px 31px;
+    box-shadow: #313131 15px 15px;
     transition: .3s all;
 }
 
