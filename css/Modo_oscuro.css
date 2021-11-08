@@ -192,3 +192,15 @@ body.dark .col-md-8{
 body.dark .card{
     border: none;
 }
+
+body.dark div.titulos-fecha{
+    color: #fff;
+    width: 90%;
+    box-sizing: border-box;
+    border-bottom: white solid 1px;
+    transition: .3s all;
+}
+
+article.InformacionPaginas{
+    color: white;
+}

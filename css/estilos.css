@@ -641,3 +641,33 @@ article.cartas div.card:hover{
 p.card-text{
     text-align: justify;
 }
+
+/*Imagenes de los Artículos*/
+
+div.titulos-fecha{
+    width: 90%;
+    box-sizing: border-box;
+    border-bottom: black solid 1px;
+}
+
+div.imagenprincipal{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+div.imagenprincipal2{
+    width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+article.InformacionPaginas{
+    text-align: justify;
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
