@@ -201,6 +201,6 @@ body.dark div.titulos-fecha{
     transition: .3s all;
 }
 
-article.InformacionPaginas{
+body.dark article.InformacionPaginas{
     color: white;
 }
