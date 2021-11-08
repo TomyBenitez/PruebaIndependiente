@@ -628,3 +628,16 @@ div.card{
     right: 10%;
     margin: 5px;
 }
+
+article.cartas div.card{
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+article.cartas div.card:hover{
+    transform: scale(1.02);
+}
+
+p.card-text{
+    text-align: justify;
+}
