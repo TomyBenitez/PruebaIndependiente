@@ -671,3 +671,50 @@ article.InformacionPaginas{
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
+div.SeguíLeyendo{
+    text-align: center;
+    box-shadow: darkgray 5px 5px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #22a2c4;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #22a2c4;
+    cursor: pointer;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+
+div.SeguíLeyendo::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,
+    rgb(#fafafa), #22a2c4);
+    transition: all .25s;
+    z-index: -1;
+}
+
+div.SeguíLeyendo:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #22a2c4;
+    font-size: 13px;
+    transition: .4s;
+}
+
+div.SeguíLeyendo:hover::before{
+    height: 100%;
+}
