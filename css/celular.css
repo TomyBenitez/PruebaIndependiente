@@ -322,6 +322,24 @@
         font-size: 15px;
         margin-bottom:6px;
     }
+
+    div.imagenprincipal{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    div.imagenprincipal2{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -409,6 +427,24 @@
         font-size: 15px;
         margin-bottom:6px;
     }
+
+    div.imagenprincipal{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    div.imagenprincipal2{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 327px){
@@ -494,6 +530,24 @@
     div.register-box a{
         font-size: 15px;
         margin-bottom:6px;
+    }
+
+    div.imagenprincipal{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    div.imagenprincipal2{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 }
 
@@ -582,5 +636,23 @@
     div.register-box a{
         font-size: 15px;
         margin-bottom:6px;
+    }
+
+    div.imagenprincipal{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    div.imagenprincipal2{
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 }
