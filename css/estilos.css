@@ -228,7 +228,7 @@ body::-webkit-scrollbar-thumb{
 
 /*Botón de Volver y barra superior de % de contenido*/
 
-#ir_arriba_boton{
+.ir-arriba{
     position: fixed;
     z-index: 1000;
     right: 25px;
@@ -242,82 +242,10 @@ body::-webkit-scrollbar-thumb{
     transition: all .2s;
 }
 
-#ir_arriba_boton:hover{
+.ir-arriba:hover{
     cursor: pointer;
     transform: scale(1.1);
     background-color: #22a2c4;
-}
-
-.indicador_contenedor{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 7px;
-    z-index: 1001;
-}
-
-.indicador_scroll{
-    height: 100%;
-    width: 0;
-    background-color: #28bce6;
-}
-
-.ocultar{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.mostrar{
-    opacity: 1;
-    visibility: visible;
-}
-
-div.arrow {
-	width: 45%;
-	height: 45%;
-	box-sizing: border-box;
-	position: absolute;
-	transform: rotate(-45deg);
-    margin-top: 40%;
-    margin-left: 30%;
-}
-
-div.arrow::before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		border-width: .8vmin .8vmin 0 0;
-		border-style: solid;
-		border-color: #22a2c4;
-		transition: .2s ease;
-		display: block;
-		transform-origin: 100% 0;
-}
-
-div.arrow:after {
-		content: '';
-		float: left;
-		position: relative;
-		top: -100%;
-		width: 100%;
-		height: 100%;
-		border-width: 0 .8vmin 0 0;
-        left: 0%;
-		border-style: solid;
-		border-color: #22a2c4;
-		transform-origin: 80% 0;
-		transition:.2s ease;
-}
-
-#ir_arriba_boton:hover .arrow::after{
-    transform: rotate(45deg);
-    border-color: #ffffff;
-    height: 110%;
-}
-
-#ir_arriba_boton:hover div.arrow::before {
-    border-color: #ffffff;
-    transform: scale(.8);
 }
 
 /*Contacto div de texto e imagen*/
@@ -726,6 +654,7 @@ div.SeguíLeyendo:hover::before{
 	padding-top: 30px;
 	position: relative;
 	}
+
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
 	height: 100%;
 	left: 0;
@@ -733,3 +662,24 @@ div.SeguíLeyendo:hover::before{
 	top: 0;
 	width: 100%;
 	}
+
+    #progress-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 8px;
+        background: #22a2c4;
+        width: 0%;
+        z-index: 100;
+}
+
+.ir-arriba i{
+    margin-top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+.ir-arriba:hover i{
+    color: white;
+}

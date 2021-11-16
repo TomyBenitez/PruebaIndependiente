@@ -1,6 +1,33 @@
 //Botón subir y barra de Progreso
 
-addEventListener('DOMContentLoaded', () => {
+const progressBar = document.querySelector("#progress-bar");
+const section = document.querySelector("section");
+
+const animateProgressbar = () => {
+    let scrollDistance = -section.getBoundingClientRect().top;
+    let progressWidth = (scrollDistance / (section.getBoundingClientRect().height-document.documentElement.clientHeight))*100;
+    let value = Math.floor(progressWidth);
+    progressBar.style.width = value + "%";
+};
+
+window.addEventListener("scroll", animateProgressbar);
+
+$(document).ready(function(){
+    $('.ir-arriba').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+            $('.ir-arriba').slideDown(300);
+        }else{
+            $('.ir-arriba').slideUp(300);
+        }
+    });
+});
+
+/*addEventListener('DOMContentLoaded', () => {
     const boton_ir_arriba = document.querySelector('#ir_arriba_boton')
     const barra_indicador = document.querySelector(".indicador_scroll")
 
@@ -26,7 +53,7 @@ addEventListener('DOMContentLoaded', () => {
 
     boton_ir_arriba.addEventListener('click', irArriba)
     window.addEventListener('scroll', indicar_scroll)
-});
+});*/
 
 //Botón de switch modo oscuro.
 

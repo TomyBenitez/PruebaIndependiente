@@ -76,13 +76,20 @@ body.dark th{
 
 /*botón de subir*/
 
-body.dark #ir_arriba_boton{
-    background-color: #313131;
+body.dark .ir-arriba{
+    color: #22a2c4;
+    background: #313131;
 }
 
-body.dark #ir_arriba_boton:hover{
-    background-color: #22a2c4;
+body.dark .ir-arriba:hover{
+    background: #22a2c4;
 }
+
+body.dark .ir-arriba:hover i{
+    color: #313131;
+}
+
+/*Botones de nav*/
 
 body.dark button.inicio{
     background-color: #313131;
@@ -93,7 +100,6 @@ body.dark button.inicio:hover{
     color: rgb(255, 255, 255);
     background-color: #22a2c4;
 }
-
 
 /*botón de login y register*/
 body.dark button.login{
@@ -223,4 +229,13 @@ body.dark div.SeguíLeyendo:hover{
     border: 1px solid rgb(0, 0, 0);
     color: #fff;
     background-color: #22a2c4;
+}
+
+/*ayuda*/
+body.dark h3{
+    color: #fff;
+}
+
+body.dark h6{
+    color: #fff;
 }
